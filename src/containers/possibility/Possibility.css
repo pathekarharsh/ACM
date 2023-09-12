@@ -1,0 +1,83 @@
+.possibility {
+  display: flex;
+  width: 100%;
+}
+
+.possibility-image {
+    flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.possibility img {
+  width: 475px;
+  height: 540px;
+}
+
+.possibility-heading {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 5rem 0 3rem;
+  max-width: 600px;
+}
+
+.possibility-heading h1 {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.possibility-heading p {
+  color: #adc4ce;
+  font-size: 16px;
+  line-height: 30px;
+  padding-top: 1rem;
+}
+
+.possibility-heading h4{
+    color: #adc4ce;
+    padding-top: 1rem;
+}
+
+
+@media screen and (max-width: 950px) {
+    .possibility {
+        flex-direction: column;
+    }
+
+    .possibility-image {
+        margin: 1rem 0;
+    }
+
+    .possibility-image img {
+        width: unset;
+        height: unset;
+    }
+
+    .possibility-heading {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .possibility-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .possibility-heading h1{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .possibility-heading p{
+        font-size: 12px;
+    }
+}
