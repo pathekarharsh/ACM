@@ -1,14 +1,11 @@
 import React from "react";
 import "./App.css";
-import { Brand, CTA, Navbar } from "./components";
-import {
-  Footer,
-  Blog,
-  Possibility,
-  Features,
-  Header,
-  WhatGPT,
-} from "./containers";
+import CTA from "./containers/cta/Cta";
+import Navbar from "./containers/navbar/Navbar";
+import Footer from "./containers/footer/Footer";
+import Possibility from "./containers/possibility/Possibility";
+import Header from "./containers/header/Header";
+import WhatGPT from "./containers/whatGPT3/WhatGPT";
 
 function App() {
   return (
@@ -16,13 +13,11 @@ function App() {
       <div className="gradient__bg">
         <Navbar />
         <Header />
+        <WhatGPT />
+        <CTA />
+        <Possibility />
+        <div className="top">INFOTREK '24</div>
       </div>
-      <Brand />
-      <WhatGPT />
-      <Features />
-      <Possibility />
-      <CTA />
-      <Blog />
       <Footer />
     </div>
   );

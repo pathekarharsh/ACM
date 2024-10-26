@@ -7,36 +7,35 @@ const Footer = () => {
   return (
     <div className="footer section__padding">
       <div className='footer-heading'>
-        <h1 className="gradient__text">Do you want to step in to the future before others</h1>
-        <button>Request Early Access</button>
+        <h1 className="gradient__text">Do you want to step into the world of tech</h1>
+        <button><a href="https://infotrek24.tech/events">See Events</a></button>
       </div>
       <div className='footer-content'>
         <div className='footer-logo'>
-          <img src={logo} alt="logo"/>
-          <p>Cooperate on AI Safety, Compete on AI Capabilities.</p>
+          <img src={logo} alt="logo" className="logo-img"/>
+          <p>the world's largest educational and scientific computing society.</p>
         </div>
         <div className='footer-links'>
           <h4>Socials</h4>
-          <a href="https://www.youtube.com/OpenAI">Youtube</a>
-          <a href="https://www.linkedin.com/company/openai/">LinkedIn</a>
-          <a href="https://github.com/openai">Github</a>
-          <a href="https://twitter.com/OpenAI">Twitter</a>
+          <a href="https://www.youtube.com/@TheOfficialACM">Youtube</a>
+          <a href="https://www.linkedin.com/company/acm-student-chapter-nit-trichy/posts/?feedView=all">LinkedIn</a>
+          <a href="https://www.instagram.com/acm_nitt/">Instagram</a>
         </div>
         <div className='footer-links'>
-        <h4>Company</h4>
-          <a href="https://openai.com/policies">Terms & Conditions</a>
-          <a href="https://openai.com/careers">Careers</a>
-          <a href="info@openai.com">Contact</a>
+        <h4>ACM</h4>
+          <a href="https://infotrek24.tech/events">Events</a>
+          <a href="https://infotrek24.tech/">Careers</a>
+          <a href="info@acm.com">Contact</a>
         </div>
         <div className='footer-links'>
         <h4>Get in Touch</h4>
-          <a>Sector-12 Chandigarh</a>
+          <a>NIT TRICHY</a>
           <a>065-123456</a>
-          <a>info@open.ai</a>
+          <a>info@acm.com</a>
         </div>
       </div>
       <div className='footer-copyright'>
-        <p>&copy; {year} GPT. All Rights Reserved.</p>
+        <p>&copy; {year} INFOTREK. All Rights Reserved.</p>
       </div>
     </div>
   )

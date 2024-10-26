@@ -1,0 +1,105 @@
+.cta {
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding: 2.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-heading {
+  display: flex;
+  flex-direction: column;
+  color: #000000; /* Changed to a darker color for better contrast */
+}
+
+.cta-heading p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #555; /* Slightly darker for better visibility */
+  margin-bottom: 0.5rem;
+}
+
+.cta-heading h1 {
+  font-size: 28px;
+  line-height: 42px;
+  color: #000000; /* Changed to a darker color for better contrast */
+  margin: 0;
+}
+
+.cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.cta-button button {
+  padding: 16px 32px;
+  font-size: 18px;
+  background-color: #72BF78;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.cta-button button a{
+  text-decoration: none;
+  color: #222;
+}
+
+.cta-button button:hover {
+  background-color: transparent;
+  color: #222;
+  border-color: #222; 
+}
+
+@media screen and (max-width: 1050px) {
+  .cta {
+    padding: 2rem;
+  }
+
+  .cta-heading h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .cta-button button {
+    font-size: 16px;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cta {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .cta-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-button {
+    margin-left: 0;
+  }
+
+  .cta-heading h1 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .cta-button button {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+}

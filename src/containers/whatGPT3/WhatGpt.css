@@ -1,118 +1,108 @@
 .gpt {
-    /* ff 3.6+ */
-    background: -moz-linear-gradient(90deg, rgba(114, 0, 140, 1) 0%, rgba(0, 0, 0, 1) 100%); 
-
-    /* safari 5.1+,chrome 10+ */
-    background: -webkit-linear-gradient(90deg, rgba(114, 0, 140, 1) 0%, rgba(0, 0, 0, 1) 100%);
-
-    /* opera 11.10+ */
-    background: -o-linear-gradient(90deg, rgba(114, 0, 140, 1) 0%, rgba(0, 0, 0, 1) 100%);
-
-    /* ie 6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#72008C', GradientType=0 );
-
-    /* ie 10+ */
-    background: -ms-linear-gradient(90deg, rgba(114, 0, 140, 1) 0%, rgba(0, 0, 0, 1) 100%);
-
-    /* global 94%+ browsers support */
-    background: linear-gradient(90deg, rgba(114, 0, 140, 1) 0%, rgba(0, 0, 0, 1) 100%);
-
-    padding: 3rem;
+  background: linear-gradient(90deg, rgba(45, 55, 72, 1) 0%, rgba(28, 38, 50, 1) 100%);
+  padding: 4rem;
+  color: var(--color-subtext);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-        
 
 .gpt-feature {
-    display: flex;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-/* Customizing feature component as per needs */
-.gpt-feature .container-feature {
-    margin: 2rem 1rem;
+.gpt-feature h1 {
+  margin: 0;
+  font-weight: 700;
+  color: var(--color-text);
 }
 
-/* Customizing feature component as per needs */
-.gpt-feature .feature-text {
-    max-width: 700px;
+.gpt-feature p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #d5e5e0;
 }
 
-.gpt-heading{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin:2rem 1rem;
+.gpt-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem 0;
 }
 
-.gpt-heading h1{
-    font-size: 35px;
-    line-height: 45px;
-    max-width: 510px;
+.gpt-heading h1 {
+  font-size: 48px;
+  line-height: 1.2;
 }
 
-.gpt-heading p{
-    font-size: 16px;
-    line-height: 30px;
-    color: #ff963f;
-    cursor: pointer;
+.gpt-heading p {
+  font-size: 16px;
+  color: var(--gradient-text);
+  margin: 0.5rem 0;
 }
 
-.gpt-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 1.5rem;
+.gpt-heading p a {
+  text-decoration: underline;
+  color: var(--gradient-text);
+  transition: color 0.3s;
 }
 
-.gpt-container .container-feature {
-    flex: 1;
-    margin: 1rem;
-    min-width: 210px;
-    display: unset;
-    flex-direction: column;
+.gpt-heading p a:hover {
+  color: #ff8c94;
 }
 
-/* Customizing feature component as per needs */
-.gpt-container .feature-text {
-    margin-top: 0.5rem;
+.gpt-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.container-feature {
+  flex: 1;
+  margin: 1rem;
+  min-width: 250px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.container-feature:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.container-feature h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.feature-text {
+  color: #d5e5e0;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 850px) {
-    .gpt-heading {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 0rem;
-    }
+  .gpt-heading {
+    align-items: flex-start;
+  }
 
-    .gpt-heading p {
-        margin-top: 1rem;
-    }
+  .gpt-heading p {
+    margin-top: 1rem;
+  }
 }
 
-@media screen and (max-width: 650px) {
-    /* Customizing feature component as per needs */
-    .gpt{
-        padding: 0.5rem;
-    }
-    .gpt-feature .container-feature {
-        flex-direction: column;
-    }
 
-    /* Customizing feature component as per needs */
-    .gpt-feature .feature-text {
-        margin-top: 0.5rem;
-    }
+@media screen and (max-width: 500px) {
+  .gpt-heading h1 {
+    font-size: 28px;
+  }
 
-    .gpt-heading h1 {
-        font-size: 24px;
-        line-height: 34px;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    /* Customizing feature component as per needs */
-    .gpt-container .container-feature {
-        margin: 0.5rem 0;
-        min-width: 100%;
-    }
+  .container-feature {
+    min-width: 100%;
+    margin: 0.5rem 0;
+  }
 }

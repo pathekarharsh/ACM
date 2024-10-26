@@ -1,83 +1,81 @@
 .possibility {
-  display: flex;
-  width: 100%;
+  background: linear-gradient(90deg, rgba(45, 55, 72, 1) 0%, rgba(28, 38, 50, 1) 100%);
+  color: var(--color-subtext);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.possibility-image {
-    flex: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin-right: 2rem;
+.possibility h1 {
+  font-size: 36px;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
 }
 
-.possibility img {
-  width: 475px;
-  height: 540px;
-}
-
-.possibility-heading {
-  flex: 1;
+.possibility-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  margin: 0 5rem 0 3rem;
-  max-width: 600px;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.possibility-heading h1 {
-  font-size: 34px;
-  line-height: 40px;
+.team-member {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  width: 220px;
+  text-align: center;
+  color: #D5E5E0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
 }
 
-.possibility-heading p {
-  color: #adc4ce;
-  font-size: 16px;
-  line-height: 30px;
-  padding-top: 1rem;
+.team-member:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
 }
 
-.possibility-heading h4{
-    color: #adc4ce;
-    padding-top: 1rem;
+.member-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gradient-text);
+  margin-bottom: 0.8rem;
 }
 
-
-@media screen and (max-width: 950px) {
-    .possibility {
-        flex-direction: column;
-    }
-
-    .possibility-image {
-        margin: 1rem 0;
-    }
-
-    .possibility-image img {
-        width: unset;
-        height: unset;
-    }
-
-    .possibility-heading {
-        margin-top: 2rem;
-    }
+.team-member h4 {
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  margin-bottom: 0.3rem;
 }
 
-@media screen and (max-width: 700px) {
+.team-member p {
+  font-size: 0.85rem;
+  color: #D5E5E0;
+  margin: 0;
+}
 
-    .possibility-image img {
-        width: 100%;
-        height: 100%;
-    }
+@media screen and (max-width: 850px) {
+  .possibility-container {
+    gap: 1rem;
+  }
+  .team-member {
+    width: 180px;
+    padding: 1rem;
+  }
+}
 
-
-    .possibility-heading h1{
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    .possibility-heading p{
-        font-size: 12px;
-    }
+@media screen and (max-width: 500px) {
+  .possibility h1 {
+    font-size: 24px;
+  }
+  .team-member {
+    width: 100%;
+    margin: 0 auto;
+  }
 }

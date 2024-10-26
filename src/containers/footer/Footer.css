@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .footer-heading {
@@ -22,11 +23,24 @@
 .footer-heading button {
   padding: 12px 32px;
   font-size: 14px;
-  background: transparent;
+  background-color: #72BF78;
   color: #fff;
   border: 1px solid #fff;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
+
+.footer-heading button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-heading button:hover {
+  background-color: transparent; 
+  color: #72BF78; 
+  border-color: #72BF78; 
+}
+
 
 .footer-content {
   display: flex;
@@ -44,8 +58,8 @@
 }
 
 .footer-logo img {
-  width: 104px;
-  height: 30px;
+  width: 100px;
+  height: auto;
   cursor: pointer;
   margin-bottom: 0.5rem;
 }

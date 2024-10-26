@@ -1,32 +1,27 @@
 import React from "react";
 import "./Header.css";
-import People from "../../assets/people.png";
-import AI from "../../assets/ai.png";
+import mountain from "../../assets/mountain.svg";
 
 const Header = () => {
   return (
     <div className="header section__padding" id="home">
       <div className="header-content">
-        <h1 className="gradient__text">
-          Discover Your Creative Spark with OpenAI
-        </h1>
+        <h1 className="gradient__text">INFOTREK</h1>
+        <h1 className="gradient__text">trekking the future</h1>
         <p>
-          Dive into the playground of possibilities with OpenAI, where curiosity
-          and invention flourish. Our tools empower you to paint your ideas onto
-          the canvas of the digital world, crafting unique experiences that
-          captivate and inspire.
+          Join Info Trek for captivating tech events! Whether you love coding,
+          design, or networking, we’ve got something exciting waiting for you.
         </p>
         <div className="header-content-input">
-          <input type="email" placeholder="Enter your email" />
-          <button type="button">Get Started</button>
+          <button className="events-button" type="button"><a href="https://infotrek24.tech/events">Events</a></button>
+          <button className="rule-book-button" type="button"><a href="https://backend.infotrek24.tech/public/pdfs/rulebook.pdf">Rule Book</a></button>
         </div>
         <div className="header-content-people">
-          <img src={People} alt="people-image" />
-          <p>1600 people requested access a visit in last 24 hours</p>
+          <p>We are waiting for you!.</p>
         </div>
       </div>
       <div className="header-image">
-        <img src={AI} alt="header-AI-image" />
+        <img src={mountain} alt="header-AI-image" className="mountain" />
       </div>
     </div>
   );
